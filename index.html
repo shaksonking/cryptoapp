@@ -330,5 +330,5 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
       <script src="scripts/preloader.js?ver=32423423424234"></script>
       <script src="https://telegram.org/js/telegram-web-app.js"></script>
-      <script>var initDatas = JSON.parse(window.Telegram.WebApp.initData); $('.page-content').html("<pre>"+initDatas+"</pre>"); console.log(window.Telegram.WebApp.initData);</script>
+      <script>var initDatas = window.Telegram.WebApp.initData; $('.page-content').html("<pre>"+initDatas+"</pre>"); console.info(JSON.parse(window.Telegram.WebApp.initData));</script>
    </body>
