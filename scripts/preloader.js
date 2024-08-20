@@ -1,4 +1,6 @@
 $(document).ready(function(){
 	'use strict'
-	$("#main-preloader").remove();
+	setTimeout(function(){
+		$("#main-preloader").remove();
+	},5000);
 })
