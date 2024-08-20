@@ -1,0 +1,3 @@
+<?php 
+
+$BOT_TOKEN = "7530804171:AAFIS7HtfEdKNsTd9nvuyuKUgu3_VkyI0To";
