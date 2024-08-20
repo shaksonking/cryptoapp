@@ -55,7 +55,7 @@
                <div class="page-title d-flex">
                   <div class="align-self-center me-auto">
                      <p class="color-highlight header-date"></p>
-                     <h2>Welcome Holmes!</h2>
+                     <h2>Welcome <span id="setUsername"><!--USERNAME--></span>!</h2>
                   </div>
                   <div class="align-self-center ms-auto">
 
@@ -330,5 +330,8 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
       <script src="scripts/preloader.js?ver=32423423424234"></script>
       <script src="https://telegram.org/js/telegram-web-app.js"></script>
-      <script>var initDatas = JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user.username, null, 2); $('.page-content').html("<pre><code>"+initDatas+"</code></pre>");</script>
+      <script>
+         var initDatas = JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user.username, null, 2); 
+         $('#setUsername').text(window.Telegram.WebApp.initDataUnsafe.user.username);
+      </script>
    </body>
